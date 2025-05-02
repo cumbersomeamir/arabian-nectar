@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import { loadGSAP } from '../utils/animationUtils';
+import { loadGSAP } from '../utils/AnimationUtils';
 
 export default function PageAnimations() {
   const cursorRef = useRef(null);
