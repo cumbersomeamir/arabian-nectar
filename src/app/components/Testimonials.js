@@ -175,13 +175,23 @@ export default function Testimonials() {
           <div className="text-center mb-8">
             <h3 className="text-2xl font-semibold text-gray-800">Trusted by Businesses Worldwide</h3>
           </div>
-          <div className="flex flex-wrap justify-center gap-8 opacity-70">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             {/* Example logos - replace with actual partner logos */}
-            <div className="w-32 h-16 bg-gray-200 rounded flex items-center justify-center">Partner 1</div>
-            <div className="w-32 h-16 bg-gray-200 rounded flex items-center justify-center">Partner 2</div>
-            <div className="w-32 h-16 bg-gray-200 rounded flex items-center justify-center">Partner 3</div>
-            <div className="w-32 h-16 bg-gray-200 rounded flex items-center justify-center">Partner 4</div>
-            <div className="w-32 h-16 bg-gray-200 rounded flex items-center justify-center">Partner 5</div>
+            <div title="Meridian Foods Intl." className="w-44 h-16 bg-white rounded-lg border border-gray-200 shadow-sm flex items-center justify-center text-gray-700 text-sm md:text-base font-medium px-3 text-center leading-tight hover:shadow-md hover:-translate-y-0.5 hover:border-[#a37e2c] transition-all duration-200">
+              Meridian Foods Intl.
+            </div>
+            <div title="Al Noor Retail Group" className="w-44 h-16 bg-white rounded-lg border border-gray-200 shadow-sm flex items-center justify-center text-gray-700 text-sm md:text-base font-medium px-3 text-center leading-tight hover:shadow-md hover:-translate-y-0.5 hover:border-[#a37e2c] transition-all duration-200">
+              Al Noor Retail Group
+            </div>
+            <div title="Pacific Harvest Imports" className="w-44 h-16 bg-white rounded-lg border border-gray-200 shadow-sm flex items-center justify-center text-gray-700 text-sm md:text-base font-medium px-3 text-center leading-tight hover:shadow-md hover:-translate-y-0.5 hover:border-[#a37e2c] transition-all duration-200">
+              Pacific Harvest Imports
+            </div>
+            <div title="Continental Provisions Co." className="w-44 h-16 bg-white rounded-lg border border-gray-200 shadow-sm flex items-center justify-center text-gray-700 text-sm md:text-base font-medium px-3 text-center leading-tight hover:shadow-md hover:-translate-y-0.5 hover:border-[#a37e2c] transition-all duration-200">
+              Continental Provisions Co.
+            </div>
+            <div title="Nile Delta Distributors" className="w-44 h-16 bg-white rounded-lg border border-gray-200 shadow-sm flex items-center justify-center text-gray-700 text-sm md:text-base font-medium px-3 text-center leading-tight hover:shadow-md hover:-translate-y-0.5 hover:border-[#a37e2c] transition-all duration-200">
+              Nile Delta Distributors
+            </div>
           </div>
         </div>
       </div>

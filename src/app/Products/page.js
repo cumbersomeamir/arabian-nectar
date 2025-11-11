@@ -35,6 +35,7 @@ export default function Products() {
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
       image: 'https://images.unsplash.com/photo-1586201375761-83865001e8c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      localImage: '/products/basmati-1121.jpg',
       featured: true
     },
     {
@@ -65,6 +66,7 @@ export default function Products() {
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
       image: 'https://images.unsplash.com/photo-1615485500785-12e40c9d6d38?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      localImage: '/products/turmeric-powder.jpg',
       featured: true
     },
     {
@@ -80,6 +82,7 @@ export default function Products() {
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
       image: 'https://images.unsplash.com/photo-1599690925058-89141a193159?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      localImage: '/products/black-pepper.jpg',
       featured: false
     },
     {
@@ -95,6 +98,7 @@ export default function Products() {
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
       image: 'https://images.unsplash.com/photo-1515543904379-3d757afe72a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      localImage: '/products/toor-dal.jpg',
       featured: true
     },
     {
@@ -472,10 +476,11 @@ export default function Products() {
               >
                 {/* Product image with badge for featured products */}
                 <div className="relative overflow-hidden h-64">
-                  <div 
-                    className="product-image absolute inset-0 bg-cover bg-center transition-transform duration-700"
-                    style={{ backgroundImage: `url(${product.image})` }}
-                  ></div>
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="product-image absolute inset-0 w-full h-full object-cover transition-transform duration-700"
+                  />
                   
                   {product.featured && (
                     <div className="absolute top-4 right-4 bg-[#a37e2c] text-white text-xs font-bold px-3 py-1 rounded-full z-10">

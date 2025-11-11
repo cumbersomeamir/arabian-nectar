@@ -213,13 +213,15 @@ export default function Contact() {
           >
             {/* Interactive Map */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8 h-64">
-              {/* This would be replaced with an actual map */}
-              <div className="h-full w-full bg-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-gray-600 mb-2">Map Loading...</p>
-                  <p className="text-sm">Building A1, Dubai Digital Park, DSO, Dubai, UAE</p>
-                </div>
-              </div>
+              <iframe
+                title="Arabian Nectar Trading Location"
+                src="https://www.google.com/maps?q=Building%20A1%2C%20Dubai%20Digital%20Park%2C%20DSO%2C%20Dubai%2C%20UAE&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
             
             {/* Contact Information */}

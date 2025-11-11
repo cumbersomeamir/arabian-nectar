@@ -72,7 +72,7 @@ export default function MarketInsights() {
             className="transition-all duration-1000 ease-out translate-y-20 opacity-0"
           >
             <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-6 text-center">Market Growth Projections (2025-2030)</h3>
+              <h3 className="text-xl font-semibold mb-6 text-center text-gray-800">Market Growth Projections (2025-2030)</h3>
               
               <div 
                 ref={chartRef}
@@ -107,7 +107,7 @@ export default function MarketInsights() {
                           data-height={`${item.cagr * 10}%`}
                         ></div>
                       </div>
-                      <div className="mt-2 text-sm font-medium">{item.category}</div>
+                      <div className="mt-2 text-sm font-semibold text-gray-800">{item.category}</div>
                       <div className="text-lg font-bold" style={{ color: item.color }}>{item.cagr}%</div>
                     </div>
                   ))}
@@ -143,8 +143,8 @@ export default function MarketInsights() {
               ))}
             </div>
             
-            <div className="mt-8 p-6 bg-[#006039] bg-opacity-10 rounded-lg">
-              <p className="text-gray-700">
+            <div className="mt-8 p-6 rounded-lg bg-[#edf7f3] border border-[#d7ece3]">
+              <p className="text-gray-800">
                 These projections highlight the immense opportunities in the food commodity sector, 
                 and Arabian Nectar Trading is at the forefront of this growth. Our strategic location in Dubai, 
                 combined with our expertise in global trade, positions us to meet rising demand with agility and precision.

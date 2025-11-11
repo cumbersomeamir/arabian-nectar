@@ -169,7 +169,7 @@ export default function Stats() {
             className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm shadow-xl transform transition-all duration-500"
           >
             <div className="text-5xl font-bold mb-2 text-[#c9c08f]">{counters[0]}+</div>
-            <div className="uppercase tracking-wider text-white">Countries Served</div>
+            <div className="uppercase tracking-wider text-[#1f3a2e]">Countries Served</div>
           </div>
           
           {/* Annual Export Volume */}
@@ -178,7 +178,7 @@ export default function Stats() {
             className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm shadow-xl transform transition-all duration-500"
           >
             <div className="text-5xl font-bold mb-2 text-[#c9c08f]">{counters[1].toLocaleString()}+</div>
-            <div className="uppercase tracking-wider text-white">Metric Tons</div>
+            <div className="uppercase tracking-wider text-[#1f3a2e]">Metric Tons</div>
           </div>
           
           {/* Customer Satisfaction */}
@@ -187,7 +187,7 @@ export default function Stats() {
             className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm shadow-xl transform transition-all duration-500"
           >
             <div className="text-5xl font-bold mb-2 text-[#c9c08f]">{counters[2]}%</div>
-            <div className="uppercase tracking-wider text-white">Satisfaction Rate</div>
+            <div className="uppercase tracking-wider text-[#1f3a2e]">Satisfaction Rate</div>
           </div>
           
           {/* Product Categories */}
@@ -196,7 +196,7 @@ export default function Stats() {
             className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm shadow-xl transform transition-all duration-500"
           >
             <div className="text-5xl font-bold mb-2 text-[#c9c08f]">{counters[3]}+</div>
-            <div className="uppercase tracking-wider text-white">Product Categories</div>
+            <div className="uppercase tracking-wider text-[#1f3a2e]">Product Categories</div>
           </div>
           
           {/* On-Time Delivery */}
@@ -205,7 +205,7 @@ export default function Stats() {
             className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm shadow-xl transform transition-all duration-500"
           >
             <div className="text-5xl font-bold mb-2 text-[#c9c08f]">{counters[4]}%</div>
-            <div className="uppercase tracking-wider text-white">On-Time Delivery</div>
+            <div className="uppercase tracking-wider text-[#1f3a2e]">On-Time Delivery</div>
           </div>
         </div>
       </div>
