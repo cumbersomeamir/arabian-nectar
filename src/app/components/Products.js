@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function Products() {
   const [activeCategory, setActiveCategory] = useState('rice');
@@ -58,7 +59,7 @@ export default function Products() {
       },
       {
         name: '1509 Steam',
-        image: 'https://images.unsplash.com/photo-1551889229-56e992f37a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://om-dashboards-dev.s3.ap-south-1.amazonaws.com/products/ed7465aa-eab6-481a-b60c-8e3fa557e315/1573558866321.png',
         specs: [
           { label: 'Average Length', value: '8.35 mm' },
           { label: 'Moisture', value: '14% Max' },
@@ -68,7 +69,7 @@ export default function Products() {
       },
       {
         name: 'Pusa 1401 White Sella',
-        image: 'https://images.unsplash.com/photo-1567305235503-14e65c3a80f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/488930767/FP/UB/AJ/95041853/pusa-white-sella-rice-500x500.jpg',
         specs: [
           { label: 'Average Length', value: '7.9-8.1 mm' },
           { label: 'Moisture', value: '14% Max' },
@@ -80,7 +81,7 @@ export default function Products() {
     spices: [
       {
         name: 'Red Chili',
-        image: 'https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://static.vecteezy.com/system/resources/thumbnails/000/477/360/small/1603.i040.037.P.m003.c26.Red_chilli_pepper_realistic.jpg',
         specs: [
           { label: 'Origin', value: 'Premium Growing Regions' },
           { label: 'Processing', value: 'Sun-dried & Ground' },
@@ -90,7 +91,7 @@ export default function Products() {
       },
       {
         name: 'Black Pepper',
-        image: 'https://images.unsplash.com/photo-1518614935489-0624d9294a68?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://greenspices.in/wp-content/uploads/2021/07/black-pepper1.png',
         specs: [
           { label: 'Origin', value: 'Premium Growing Regions' },
           { label: 'Processing', value: 'Sun-dried & Cleaned' },
@@ -100,7 +101,7 @@ export default function Products() {
       },
       {
         name: 'Cardamom',
-        image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://greenspices.in/wp-content/uploads/2021/07/Cardamom.jpg',
         specs: [
           { label: 'Origin', value: 'Premium Growing Regions' },
           { label: 'Processing', value: 'Hand Selected' },
@@ -112,7 +113,7 @@ export default function Products() {
     pulses: [
       {
         name: 'Toor Dal',
-        image: 'https://images.unsplash.com/photo-1604153787509-7a72505e7e84?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://www.adidevgroup.com/img/products/toor-daal.jpg',
         specs: [
           { label: 'Processing', value: 'Polished to Perfection' },
           { label: 'Purity', value: '99.9%' },
@@ -122,7 +123,7 @@ export default function Products() {
       },
       {
         name: 'Masoor Dal',
-        image: 'https://images.unsplash.com/photo-1612257099503-1c9387f09c69?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://5.imimg.com/data5/BL/XH/MY-49530431/masoor-dal-500x500.jpg',
         specs: [
           { label: 'Processing', value: 'Polished to Perfection' },
           { label: 'Purity', value: '99.9%' },
@@ -132,7 +133,7 @@ export default function Products() {
       },
       {
         name: 'Chana Dal',
-        image: 'https://images.unsplash.com/photo-1613165633372-9cacd6b7577a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://twobrothersindiashop.com/cdn/shop/articles/chana-dal-benefits.png?v=1694585472&width=1024',
         specs: [
           { label: 'Processing', value: 'Polished to Perfection' },
           { label: 'Purity', value: '99.9%' },
@@ -223,9 +224,9 @@ export default function Products() {
                     </li>
                   ))}
                 </ul>
-                <button className="mt-6 w-full py-2 bg-[#006039] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#004c2d]">
+                <Link href="/Contact" className="mt-6 w-full inline-block text-center py-2 bg-[#006039] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#004c2d]">
                   Request Quote
-                </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -233,12 +234,12 @@ export default function Products() {
         
         {/* View All Button */}
         <div className="text-center mt-12">
-          <button className="inline-flex items-center px-6 py-3 bg-[#a37e2c] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#8a6a24]">
+          <Link href="/Products" className="inline-flex items-center px-6 py-3 bg-[#a37e2c] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#8a6a24]">
             View Full Catalog
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -236,9 +236,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <p className="text-gray-700 font-medium">Phone</p>
-                    <p className="text-gray-600">+971 508 546 650</p>
-                    <p className="text-gray-600">+971 551 968 673</p>
+                    <p className="text-blue-700 font-medium">Phone</p>
+                    <p className="text-blue-600">+971 508 546 650</p>
+                    <p className="text-blue-600">+971 551 968 673</p>
                   </div>
                 </div>
                 
@@ -249,8 +249,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <p className="text-gray-700 font-medium">Email</p>
-                    <p className="text-gray-600">info@arabiannectar.com</p>
+                    <p className="text-blue-700 font-medium">Email</p>
+                    <p className="text-blue-600">info@arabiannectar.com</p>
                   </div>
                 </div>
                 
@@ -262,9 +262,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <p className="text-gray-700 font-medium">Address</p>
-                    <p className="text-gray-600">Building A1, Dubai Digital Park,</p>
-                    <p className="text-gray-600">DSO, Dubai, UAE</p>
+                    <p className="text-blue-700 font-medium">Address</p>
+                    <p className="text-blue-600">Building A1, Dubai Digital Park,</p>
+                    <p className="text-blue-600">DSO, Dubai, UAE</p>
                   </div>
                 </div>
                 

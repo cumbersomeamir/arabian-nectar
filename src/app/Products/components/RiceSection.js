@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 
 export default function RiceSection() {
   const sectionRef = useRef(null);
@@ -30,7 +31,7 @@ export default function RiceSection() {
         grainLength: '8.35 mm',
         moisture: '14% Max',
         broken: '1% Max',
-        image: 'https://images.unsplash.com/photo-1550828484-a8e520effb7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://om-dashboards-dev.s3.ap-south-1.amazonaws.com/products/ed7465aa-eab6-481a-b60c-8e3fa557e315/1573558866321.png',
         description: '1509 Basmati Rice features extra-long grains with a delicate aroma and tender texture. Sourced from premium rice-growing regions in India, it undergoes stringent quality checks, making it ideal for biryani, pilaf, and other rice dishes that demand perfection.'
       },
       {
@@ -40,7 +41,7 @@ export default function RiceSection() {
         grainLength: '7.9-8.1 mm',
         moisture: '14% Max',
         broken: '1% Max',
-        image: 'https://images.unsplash.com/photo-1567305235503-14e65c3a80f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/488930767/FP/UB/AJ/95041853/pusa-white-sella-rice-500x500.jpg',
         description: 'Pusa 1401 Basmati Rice offers a slightly shorter grain length than 1121 and 1509 but retains the classic Basmati aroma and texture. Sourced from certified farms in Uttar Pradesh, India, this variety is a cost-effective option for bulk buyers, delivering premium quality for catering, retail, and food service industries.'
       }
     ],
@@ -382,7 +383,10 @@ export default function RiceSection() {
                 </div>
                 
                 <div className="mt-6 text-center">
-                  <button className="inline-flex items-center text-[#006039] font-medium hover:text-[#a37e2c] transition-colors duration-300">
+                  <button 
+                    className="inline-flex items-center text-[#006039] font-medium hover:text-[#a37e2c] transition-colors duration-300"
+                    onClick={() => handleRiceClick(rice)}
+                  >
                     View Details
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -396,12 +400,12 @@ export default function RiceSection() {
         
         {/* View all button */}
         <div className="text-center mt-12">
-          <button className="inline-flex items-center px-8 py-4 bg-[#006039] text-white rounded-lg font-semibold shadow-lg transition-all duration-300 hover:bg-[#004c2d] transform hover:translate-y-[-2px]">
+          <Link href="/Contact" className="inline-flex items-center px-8 py-4 bg-[#006039] text-white rounded-lg font-semibold shadow-lg transition-all duration-300 hover:bg-[#004c2d] transform hover:translate-y-[-2px]">
             Download Rice Catalogue
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
       
@@ -494,12 +498,9 @@ export default function RiceSection() {
                 </div>
                 
                 <div className="flex justify-end gap-4">
-                  <button className="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-medium transition-all duration-300 hover:bg-gray-300">
-                    Download Spec Sheet
-                  </button>
-                  <button className="px-6 py-3 bg-[#a37e2c] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#8a6a24]">
+                  <Link href="/Contact" className="px-6 py-3 bg-[#a37e2c] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#8a6a24]">
                     Request Quote
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

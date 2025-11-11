@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function PulsesSection() {
   const sectionRef = useRef(null);
@@ -12,7 +13,7 @@ export default function PulsesSection() {
     {
       id: 'toor-dal',
       name: 'Toor Dal',
-      image: 'https://images.unsplash.com/photo-1604153787509-7a72505e7e84?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://www.adidevgroup.com/img/products/toor-daal.jpg',
       specifications: [
         { label: 'Quality', value: 'High Quality, Polished' },
         { label: 'Moisture', value: '12% Max' },
@@ -25,7 +26,7 @@ export default function PulsesSection() {
     {
       id: 'masoor-dal',
       name: 'Masoor Dal',
-      image: 'https://images.unsplash.com/photo-1612257099503-1c9387f09c69?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://5.imimg.com/data5/BL/XH/MY-49530431/masoor-dal-500x500.jpg',
       specifications: [
         { label: 'Quality', value: 'High Quality, Polished' },
         { label: 'Moisture', value: '12% Max' },
@@ -38,7 +39,7 @@ export default function PulsesSection() {
     {
       id: 'chana-dal',
       name: 'Chana Dal',
-      image: 'https://images.unsplash.com/photo-1613165633372-9cacd6b7577a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://twobrothersindiashop.com/cdn/shop/articles/chana-dal-benefits.png?v=1694585472&width=1024',
       specifications: [
         { label: 'Quality', value: 'High Quality, Polished' },
         { label: 'Moisture', value: '12% Max' },
@@ -301,12 +302,12 @@ export default function PulsesSection() {
                 </p>
                 
                 <div className="mt-6 text-center">
-                  <button className="details-btn inline-flex items-center px-6 py-2 bg-[#006039] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#004c2d] opacity-0 transform translate-y-2">
+                  <Link href="/Contact" className="details-btn inline-flex items-center px-6 py-2 bg-[#006039] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#004c2d] opacity-0 transform translate-y-2">
                     View Details
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -357,12 +358,12 @@ export default function PulsesSection() {
         
         {/* View all button */}
         <div className="text-center mt-16">
-          <button className="inline-flex items-center px-8 py-4 bg-[#006039] text-white rounded-lg font-semibold shadow-lg transition-all duration-300 hover:bg-[#004c2d] transform hover:translate-y-[-2px]">
+          <Link href="/Contact" className="inline-flex items-center px-8 py-4 bg-[#006039] text-white rounded-lg font-semibold shadow-lg transition-all duration-300 hover:bg-[#004c2d] transform hover:translate-y-[-2px]">
             Download Pulses Catalogue
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

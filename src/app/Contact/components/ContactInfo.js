@@ -140,14 +140,14 @@ export default function ContactInfo() {
               </svg>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2">Phone</h3>
+              <h3 className="text-lg font-semibold mb-2 text-blue-700">Phone</h3>
               <div className="space-y-1">
-                <p className="text-gray-600">
+                <p className="text-blue-600">
                   <Link href="tel:+971508546650" className="hover:text-[#006039] transition-colors">
                     +971 508 546 650
                   </Link>
                 </p>
-                <p className="text-gray-600">
+                <p className="text-blue-600">
                   <Link href="tel:+971551968673" className="hover:text-[#006039] transition-colors">
                     +971 551 968 673
                   </Link>
@@ -169,8 +169,8 @@ export default function ContactInfo() {
               </svg>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2">Email</h3>
-              <p className="text-gray-600">
+              <h3 className="text-lg font-semibold mb-2 text-blue-700">Email</h3>
+              <p className="text-blue-600">
                 <Link href="mailto:info@arabiannectar.com" className="hover:text-[#006039] transition-colors">
                   info@arabiannectar.com
                 </Link>
@@ -192,8 +192,8 @@ export default function ContactInfo() {
               </svg>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2">Visit Us</h3>
-              <p className="text-gray-600">
+              <h3 className="text-lg font-semibold mb-2 text-blue-700">Visit Us</h3>
+              <p className="text-blue-600">
                 Building A1, Dubai Digital Park, DSO, Dubai, UAE
               </p>
             </div>

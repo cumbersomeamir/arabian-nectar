@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 
 export default function SpicesSection() {
   const sectionRef = useRef(null);
@@ -13,7 +14,7 @@ export default function SpicesSection() {
     {
       id: 'red-chili',
       name: 'Red Chili',
-      image: 'https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://static.vecteezy.com/system/resources/thumbnails/000/477/360/small/1603.i040.037.P.m003.c26.Red_chilli_pepper_realistic.jpg',
       specifications: {
         moisture: '12% Max',
         capsaicinContent: '0.5-1%',
@@ -26,7 +27,7 @@ export default function SpicesSection() {
     {
       id: 'black-pepper',
       name: 'Black Pepper',
-      image: 'https://images.unsplash.com/photo-1518614935489-0624d9294a68?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://greenspices.in/wp-content/uploads/2021/07/black-pepper1.png',
       specifications: {
         moisture: '13% Max',
         piperineContent: '4-6%',
@@ -52,7 +53,7 @@ export default function SpicesSection() {
     {
       id: 'cardamom',
       name: 'Cardamom',
-      image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://greenspices.in/wp-content/uploads/2021/07/Cardamom.jpg',
       specifications: {
         moisture: '10% Max',
         volatileOil: '3-5%',
@@ -356,7 +357,10 @@ export default function SpicesSection() {
                 </div>
                 
                 <div className="mt-6 text-center">
-                  <button className="inline-flex items-center text-[#006039] font-medium hover:text-[#a37e2c] transition-colors duration-300">
+                  <button 
+                    className="inline-flex items-center text-[#006039] font-medium hover:text-[#a37e2c] transition-colors duration-300"
+                    onClick={() => handleSpiceClick(spice)}
+                  >
                     View Details
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -370,12 +374,12 @@ export default function SpicesSection() {
         
         {/* View all button */}
         <div className="text-center mt-12">
-          <button className="inline-flex items-center px-8 py-4 bg-[#a37e2c] text-white rounded-lg font-semibold shadow-lg transition-all duration-300 hover:bg-[#8a6a24] transform hover:translate-y-[-2px]">
+          <Link href="/Contact" className="inline-flex items-center px-8 py-4 bg-[#a37e2c] text-white rounded-lg font-semibold shadow-lg transition-all duration-300 hover:bg-[#8a6a24] transform hover:translate-y-[-2px]">
             Download Spices Catalogue
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
       
@@ -451,12 +455,9 @@ export default function SpicesSection() {
                 </div>
                 
                 <div className="flex justify-end gap-4">
-                  <button className="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-medium transition-all duration-300 hover:bg-gray-300">
-                    Download Spec Sheet
-                  </button>
-                  <button className="px-6 py-3 bg-[#a37e2c] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#8a6a24]">
+                  <Link href="/Contact" className="px-6 py-3 bg-[#a37e2c] text-white rounded-lg font-medium transition-all duration-300 hover:bg-[#8a6a24]">
                     Request Quote
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

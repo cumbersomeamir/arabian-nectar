@@ -50,7 +50,7 @@ export default function Products() {
         { name: 'Broken', value: '1% max' },
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
-      image: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: 'https://om-dashboards-dev.s3.ap-south-1.amazonaws.com/products/ed7465aa-eab6-481a-b60c-8e3fa557e315/1573558866321.png',
       featured: false
     },
     {
@@ -81,7 +81,7 @@ export default function Products() {
         { name: 'Admixture', value: '0.5% max' },
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
-      image: 'https://5.imimg.com/data5/SELLER/Default/2023/7/329439433/JA/PV/MX/92854699/malabar-black-pepper.jpeg',
+      image: 'https://greenspices.in/wp-content/uploads/2021/07/black-pepper1.png',
       localImage: '/products/black-pepper.jpg',
       featured: false
     },
@@ -97,7 +97,7 @@ export default function Products() {
         { name: 'Admixture', value: '0.5% max' },
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
-      image: 'https://tiimg.tistatic.com/fp/1/008/596/100-natural-premium-toor-dal-962.jpg',
+      image: 'https://www.adidevgroup.com/img/products/toor-daal.jpg',
       localImage: '/products/toor-dal.jpg',
       featured: true
     },
@@ -521,7 +521,7 @@ export default function Products() {
                 {/* Action button */}
                 <div className="px-6 pb-6 mt-auto">
                   <Link 
-                    href={`/products/${product.id}`}
+                    href="/Contact"
                     className="product-button block w-full py-3 text-center rounded-lg bg-[#f4f4f2] text-[#006039] font-medium transition-all duration-300 hover:bg-[#006039] hover:text-white"
                   >
                     View Details
@@ -542,7 +542,7 @@ export default function Products() {
               Our team can source and customize products according to your specific requirements. From packaging solutions to quality parameters, we deliver tailored solutions.
             </p>
             <Link 
-              href="/contact"
+              href="/Contact"
               className="inline-block px-8 py-4 bg-white text-[#006039] rounded-lg font-bold transition-transform duration-300 hover:scale-105"
             >
               Request Custom Quote

@@ -73,11 +73,15 @@ export default function PageAnimations() {
     const { gsap } = await loadGSAP();
     
     // Smoother page load transition
-    gsap.fromTo(
-      'body',
-      { opacity: 0 },
-      { opacity: 1, duration: 0.6, ease: 'power2.inOut' }
-    );
+    // Animate the Next.js root container instead of <body> to avoid hydration mismatches
+    const rootEl = typeof document !== 'undefined' ? document.getElementById('__next') : null;
+    if (rootEl) {
+      gsap.fromTo(
+        rootEl,
+        { opacity: 0 },
+        { opacity: 1, duration: 0.6, ease: 'power2.inOut' }
+      );
+    }
     
     // Subtle background animation for the whole page
     gsap.to('.bg-gradient-animate', {

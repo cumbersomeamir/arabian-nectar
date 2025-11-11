@@ -99,7 +99,7 @@ export default function Hero() {
           </h1>
           <p 
             ref={subtitleRef}
-            className="text-xl md:text-2xl text-white/90 font-light"
+            className="text-xl md:text-2xl text-[#9eca9e] font-light"
           >
             A global leader in premium food commodities, connecting quality producers 
             with markets across the world.
