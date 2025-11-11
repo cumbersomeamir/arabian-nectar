@@ -34,7 +34,7 @@ export default function Products() {
         { name: 'Broken', value: '1% max' },
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
-      image: 'https://images.unsplash.com/photo-1586201375761-83865001e8c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: 'https://bsmedia.business-standard.com/_media/bs/img/article/2022-03/21/full/1647851191-8337.jpg',
       localImage: '/products/basmati-1121.jpg',
       featured: true
     },
@@ -65,7 +65,7 @@ export default function Products() {
         { name: 'Admixture', value: '1% max' },
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
-      image: 'https://images.unsplash.com/photo-1615485500785-12e40c9d6d38?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: 'https://www.viralspices.com/wp-content/uploads/2024/11/Untitled-1-624x312.jpg',
       localImage: '/products/turmeric-powder.jpg',
       featured: true
     },
@@ -81,7 +81,7 @@ export default function Products() {
         { name: 'Admixture', value: '0.5% max' },
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
-      image: 'https://images.unsplash.com/photo-1599690925058-89141a193159?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: 'https://5.imimg.com/data5/SELLER/Default/2023/7/329439433/JA/PV/MX/92854699/malabar-black-pepper.jpeg',
       localImage: '/products/black-pepper.jpg',
       featured: false
     },
@@ -97,7 +97,7 @@ export default function Products() {
         { name: 'Admixture', value: '0.5% max' },
         { name: 'Certification', value: 'ISO 22000, HACCP' }
       ],
-      image: 'https://images.unsplash.com/photo-1515543904379-3d757afe72a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: 'https://tiimg.tistatic.com/fp/1/008/596/100-natural-premium-toor-dal-962.jpg',
       localImage: '/products/toor-dal.jpg',
       featured: true
     },
